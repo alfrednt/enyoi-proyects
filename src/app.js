@@ -1,0 +1,1 @@
+const section__profile = document.getElementById("section__profile");
