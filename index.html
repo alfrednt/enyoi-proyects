@@ -1,5 +1,5 @@
     <!DOCTYPE html>
-    <html lang="en">
+    <html class="scroll-smooth" lang="en">
     <head>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,6 +26,16 @@
             ::-webkit-scrollbar-thumb:hover {
                 background: #1c87f4;
             }
+
+            progress {
+                background-color: #CBD5E0; 
+            border-radius: 9999px; 
+            overflow: hidden;  
+            }
+
+            progress::-webkit-progress-value {
+             background-color: #1c87f4
+            }
         </style>
     </head>
     <body class="h-full min-h-screen overflow-y-scroll  bg-secondary-alt">
@@ -51,14 +61,15 @@
         </ul>
     </nav>
     </div>
-    <div class="h-1/6 w-full text-primary px-6 flex items-center justify-center">
-        <a href="https://www.facebook.com"><i class='bx bxl-facebook text-primary text-5xl text-start m-2 p-2 rounded-full duration-300  hover:bg-blue-800 hover:text-6xl'></i></a>
-        <a href="www.facebook.com"><i class='bx bxl-instagram text-primary text-5xl text-start m-2 p-2 rounded-full duration-300   hover:bg-violet-800 hover:text-pink-400 hover:text-6xl'></i></a>
-        <a href="www.facebook.com"><i class='bx bxl-github text-primary text-5xl text-start m-2 p-2 rounded-full duration-300   hover:bg-black hover:text-6xl'></i></a>
-        
-
-
+    <footer class="h-1/6 w-full text-primary px-6 flex flex-col items-center justify-center">
+       <div>
+        <a href="https://www.facebook.com/alfred.nt" target="_blank"><i class='bx bxl-facebook text-primary text-5xl text-start m-2 p-2 rounded-full duration-300  hover:bg-blue-800 hover:text-6xl'></i></a>
+        <a href="https://www.instagram.com/alfred_nt" target="_blank"><i class='bx bxl-instagram text-primary text-5xl text-start m-2 p-2 rounded-full duration-300   hover:bg-violet-800 hover:text-pink-400 hover:text-6xl'></i></a>
+        <a href="https://github.com/alfrednt/" target="_blank"><i class='bx bxl-github text-primary text-5xl text-start m-2 p-2 rounded-full duration-300   hover:bg-black hover:text-6xl'></i></a>
     </div>
+        <div><h2>2024 Alfredo Nunez &copy;. All rights reserved.</h2>
+        </div>
+    </footer>
     </div>
 </div>
 
@@ -70,54 +81,55 @@
     </section>
     <section id="section__proyects" class="max-h-max w-full  flex flex-col p-2 m-1">
         <h2 class="text-xl text-primary border-b-[2px] font-bold">Projects:</h2>
-    <div class="h-full w-full flex flex-wrap"> 
-
-    <div class=" h-auto w-1/2 flex ">
-    <div class=" h-full w-1/2 flex flex-col justify-center items-center">
-        <img src="" alt="Proyect1">
-        <h3> Proyect 1</h3>
-    </div>
-    <div class="h-full w-1/2 flex flex-col justify-center items-center">
-        <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, libero?</p></div>
-    <div><a href="">Ir a proyecto</a></div>
-    </div>
-    </div>
-
-
-
-    <div class=" h-auto w-1/2 flex ">
+    <div class="h-full w-full flex flex-wrap p-2"> 
+        <div class=" h-auto w-1/2 flex ">
         <div class=" h-full w-1/2 flex flex-col justify-center items-center">
-        <img src="" alt="Proyect1">
-        <h3> Proyect 2</h3>
+            <img src="./assests/hotel chicamocha.png" class="rounded-xl py-3" alt="Chicamocha">
+            <div><a href="https://www.hotelchicamocha.com/" target="_blank" class="py-3 bg-primary-alt border-solid border-[#8cb9ed] p-2 rounded-lg hover:bg-[#1758b6] hover:text-primary">Ir a proyecto</a></div>
         </div>
         <div class="h-full w-1/2 flex flex-col justify-center items-center">
-        <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, libero?</p></div>
-        <div><a href="">Ir a proyecto</a></div>
+            <h3 class="text-primary-alt font-bold text-xl py-3" > Hotel Chicamocha Website</h3>
+            <div class="text-white font-bold text-sm"><p>Your website serves as the digital storefront for your business, making a lasting impression on potential customers. With our expertly crafted website, you'll stand out from the competition, attract more visitors, and convert them into loyal customers.</p></div>
+    
         </div>
-    </div>
-
-
-    <div class=" h-auto w-1/2 flex ">
+        </div>
+        <div class=" h-auto w-1/2 flex ">
         <div class=" h-full w-1/2 flex flex-col justify-center items-center">
-        <img src="" alt="Proyect1">
-        <h3> Proyect 3</h3>
+            <img src="./assests/ecomerce.png" class="h-[145px] w-[240px]rounded-xl py-3" alt="ecomerce">
+            <div><a href="https://www.mercadolibre.com/" target="_blank" class="py-3 bg-primary-alt border-solid border-[#8cb9ed] p-2 rounded-lg hover:bg-[#1758b6] hover:text-primary">Ir a proyecto</a></div>
         </div>
         <div class="h-full w-1/2 flex flex-col justify-center items-center">
-        <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, libero?</p></div>
-        <div><a href="">Ir a proyecto</a></div>
+            <h3 class="text-primary-alt font-bold text-xl py-3" > Ecomerce</h3>
+            <div class="text-white font-bold text-sm"><p>Your e-commerce website serves as the digital storefront for your business, opening doors to a global marketplace and unlocking limitless growth potential. With our tailored solution, you'll elevate your brand, expand your reach, and increase revenue like never before.</p></div>
+    
         </div>
-    </div>
-    <div class=" h-auto w-1/2 flex ">
+        </div>
+        <div class=" h-auto w-1/2 flex ">
         <div class=" h-full w-1/2 flex flex-col justify-center items-center">
-        <img src="" alt="Proyect1">
-        <h3> Proyect 4</h3>
+            <img src="./assests/la toscana.jpg" class="h-[200px] w-[200px] rounded-full py-3" alt="La toscana">
+            <div><a href="https://la-toscana-1.cluvi.co//" target="_blank" class="py-3 bg-primary-alt border-solid border-[#8cb9ed] p-2 rounded-lg hover:bg-[#1758b6] hover:text-primary">Ir a proyecto</a></div>
         </div>
         <div class="h-full w-1/2 flex flex-col justify-center items-center">
-        <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, libero?</p></div>
-        <div><a href="">Ir a proyecto</a></div>
-        </div>
-    </div>
+            <h3 class="text-primary-alt font-bold text-xl py-3" > La Toscana Ristorante</h3>
+            <div class="text-white font-bold text-sm"><p>Your restaurant's website serves as the digital front door to your establishment, offering a glimpse into the culinary experience and ambiance you provide. With our tailored solution, you'll enhance your brand's visibility, attract more diners, and increase revenue in the competitive restaurant industry.
 
+                </p></div>
+    
+        </div>
+        </div>
+        <div class=" h-auto w-1/2 flex ">
+        <div class=" h-full w-1/2 flex flex-col justify-center items-center">
+            <img src="./assests/enyoi_logo.jpg" class="h-[145px] w-[200px] rounded-xl py-3" alt="Enyoi">
+            <div><a href="https://formacion.enyoi.co/course/index.php" target="_blank" class="py-3 bg-primary-alt border-solid border-[#8cb9ed] p-2 rounded-lg hover:bg-[#1758b6] hover:text-primary">Ir a proyecto</a></div>
+        </div>
+        <div class="h-full w-1/2 flex flex-col justify-center items-center">
+            <h3 class="text-primary-alt font-bold text-xl py-3" > Enyoi digital School</h3>
+            <div class="text-white font-bold text-sm"><p>Your school's website serves as a vital communication tool and digital gateway for students, parents, and staff. With our tailored solution, you'll strengthen community engagement, streamline administrative processes, and elevate the educational experience for everyone involved.</p></div>
+    
+        </div>
+        </div>
+
+        
     </div>
     </section>
 

@@ -14,3 +14,6 @@ const expandCertificate = (event) => {
 certificateExpand.forEach(cert => {
     cert.addEventListener('click', expandCertificate);
 });
+
+
+
