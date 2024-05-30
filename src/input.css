@@ -1,3 +1,56 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #173663; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1758b6; 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #1c87f4;
+}
+
+progress {
+    background-color: #CBD5E0; 
+border-radius: 9999px; 
+overflow: hidden;  
+}
+
+progress::-webkit-progress-value {
+ background-color: #1c87f4
+}
+
+@media only screen and (max-width: 480px) {
+body {
+width: device-width;
+}
+.display_hidden{
+    display: none;
+}
+.display_col{
+display: flex;
+flex-direction: column;
+}
+.display_col>div{
+width: 100%;
+}
+.remove_left{
+    left: 0;
+    width: 100%;
+}
+.display_show{
+display: flex;
+flex-direction: column;
+}
+}
+ 

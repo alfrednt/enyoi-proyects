@@ -6,41 +6,30 @@
         <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <link rel="stylesheet" href="./src/output.css">
+        <link rel="stylesheet" href="/src/input.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Proyecto 2</title>
-        <style>
-            ::-webkit-scrollbar {
-                width: 12px;
-            }
-
-            ::-webkit-scrollbar-track {
-                background: #173663; 
-            }
-
-            ::-webkit-scrollbar-thumb {
-                background: #1758b6; 
-                border-radius: 10px;
-            }
-
-            ::-webkit-scrollbar-thumb:hover {
-                background: #1c87f4;
-            }
-
-            progress {
-                background-color: #CBD5E0; 
-            border-radius: 9999px; 
-            overflow: hidden;  
-            }
-
-            progress::-webkit-progress-value {
-             background-color: #1c87f4
-            }
-        </style>
+        <style></style>
     </head>
-    <body class="h-full min-h-screen overflow-y-scroll  bg-secondary-alt">
+    <body class="max-w-max max-h-max overflow-y-scroll  bg-secondary-alt">
         <main class="h-full w-full flex">
-    <div class="h-full w-1/4 bg-secondary flex flex-col fixed top-0">
+            <div class="h-max w-1/4 bg-secondary fixed top-0 hidden display_show">
+                <div class="w-max p-3">
+                    <button type="menu" class="m-2 w-full bg-primary-alt font-primary-alt rounded-full text-primary hover:bg-blue-800">Menu</button>
+                </div>
+            <nav class="w-auto h-max flex flex-col text-primary font-primary-alt text-lg items-center">
+                <ul>
+                    <li><a class="hover:text-white duration-300" href="#section__profile">Profile</a></li>
+                    <li><a class="hover:text-white duration-300" href="#section__proyects">Proyects</a></li>
+                    <li><a class="hover:text-white duration-300" href="#section__experience">Experience</a></li>
+                    <li><a class="hover:text-white duration-300" href="#section__certificates">Certificates</a></li>
+                    <li><a class="hover:text-white duration-300" href="#section__references">References</a></li>
+                    <li><a class="hover:text-white duration-300" href="#section__contact">Contact</a></li>
+                </ul>
+            </nav>
+            </div>
+    <div class="h-full w-1/4 bg-secondary flex flex-col fixed top-0 display_hidden">
    <div class="h-2/6 w-full text-primary font-primary flex flex-col content-center">
     <div id="photo" class="h-5/6 w-full rounded-full flex justify-center items-center"> 
         <img src="./src/page-export.png" alt="profile photo" class="h-5/6 w-auto rounded-full" > 
@@ -49,8 +38,8 @@
         <h2 class="text-3xl text-center font-primary font-bold">Alfredo Nuñez Torres</h2>
     </div>    
     </div>
-    <div class="h-3/6 w-full">
-    <nav class="w-auto h-full flex flex-col text-primary font-primary-alt text-2xl items-center  leading-8">
+    <div class="h-max w-full">
+    <nav class="w-auto h-max flex flex-col text-primary font-primary-alt text-2xl items-center  leading-8">
         <ul>
             <li class="py-6"><a class="hover:text-white duration-300 hover:text-3xl" href="#section__profile">Profile</a></li>
             <li class="py-6"><a class="hover:text-white duration-300 hover:text-3xl" href="#section__proyects">Proyects</a></li>
@@ -61,10 +50,10 @@
         </ul>
     </nav>
     </div>
-    <footer class="h-1/6 w-full text-primary px-6 flex flex-col items-center justify-center">
-       <div>
+    <footer class="h-max w-full text-primary px-6 flex flex-col items-center justify-center">
+       <div class="flex ">
         <a href="https://www.facebook.com/alfred.nt" target="_blank"><i class='bx bxl-facebook text-primary text-5xl text-start m-2 p-2 rounded-full duration-300  hover:bg-blue-800 hover:text-6xl'></i></a>
-        <a href="https://www.instagram.com/alfred_nt" target="_blank"><i class='bx bxl-instagram text-primary text-5xl text-start m-2 p-2 rounded-full duration-300   hover:bg-violet-800 hover:text-pink-400 hover:text-6xl'></i></a>
+        <a href="https://www.linkedin.com/" target="_blank"><i class='bx bxl-linkedin text-primary text-5xl text-start m-2 p-2 rounded-full duration-300   hover:bg-blue-800 hover:text-6xl'></i></a>
         <a href="https://github.com/alfrednt/" target="_blank"><i class='bx bxl-github text-primary text-5xl text-start m-2 p-2 rounded-full duration-300   hover:bg-black hover:text-6xl'></i></a>
     </div>
         <div><h2>2024 Alfredo Nunez &copy;. All rights reserved.</h2>
@@ -73,16 +62,16 @@
     </div>
 </div>
 
-    <div class="max-h-max w-3/4 flex flex-col absolute left-1/4 justify-evenly font-primary">
+  <!--   <div class="max-h-max w-3/4 flex flex-col absolute left-1/4 justify-evenly font-primary remove_left ">
     <section id="section__profile" class="max-h-max w-full m-1 p-2">
         <h2 class="text-white border-b-[2px] font-primary-alt font-bold text-xl">Profile:<br></h2>
         <h2 class="text-white font-bold text-xl">Full Stack Developer</h2>
         <p class="text-lg text-primary">I am a passionate junior full stack developer with solid skills in web development. I have gained experience working with technologies such as <span class="text-primary-alt">HTML, CSS, JavaScript, and TypeScript</span>, allowing me to create dynamic and functional user interfaces. My experience using frameworks like <span class="text-primary-alt">Tailwind CSS</span> has enabled me to develop websites with modern and responsive designs, optimizing the user experience.</p>
     </section>
-    <section id="section__proyects" class="max-h-max w-full  flex flex-col p-2 m-1">
+    <section id="section__proyects" class="h-max w-full  flex flex-col p-2 m-1">
         <h2 class="text-xl text-primary border-b-[2px] font-bold">Projects:</h2>
-    <div class="h-full w-full flex flex-wrap p-2"> 
-        <div class=" h-auto w-1/2 flex ">
+    <div class="h-full w-full flex flex-wrap p-2 display_col"> 
+        <div class=" h-auto w-1/2 flex display_col">
         <div class=" h-full w-1/2 flex flex-col justify-center items-center">
             <img src="./assests/hotel chicamocha.png" class="rounded-xl py-3" alt="Chicamocha">
             <div><a href="https://www.hotelchicamocha.com/" target="_blank" class="py-3 bg-primary-alt border-solid border-[#8cb9ed] p-2 rounded-lg hover:bg-[#1758b6] hover:text-primary">Ir a proyecto</a></div>
@@ -93,7 +82,7 @@
     
         </div>
         </div>
-        <div class=" h-auto w-1/2 flex ">
+        <div class=" h-auto w-1/2 flex display_col">
         <div class=" h-full w-1/2 flex flex-col justify-center items-center">
             <img src="./assests/ecomerce.png" class="h-[145px] w-[240px]rounded-xl py-3" alt="ecomerce">
             <div><a href="https://www.mercadolibre.com/" target="_blank" class="py-3 bg-primary-alt border-solid border-[#8cb9ed] p-2 rounded-lg hover:bg-[#1758b6] hover:text-primary">Ir a proyecto</a></div>
@@ -104,7 +93,7 @@
     
         </div>
         </div>
-        <div class=" h-auto w-1/2 flex ">
+        <div class=" h-auto w-1/2 flex display_col">
         <div class=" h-full w-1/2 flex flex-col justify-center items-center">
             <img src="./assests/la toscana.jpg" class="h-[200px] w-[200px] rounded-full py-3" alt="La toscana">
             <div><a href="https://la-toscana-1.cluvi.co//" target="_blank" class="py-3 bg-primary-alt border-solid border-[#8cb9ed] p-2 rounded-lg hover:bg-[#1758b6] hover:text-primary">Ir a proyecto</a></div>
@@ -117,7 +106,7 @@
     
         </div>
         </div>
-        <div class=" h-auto w-1/2 flex ">
+        <div class=" h-auto w-1/2 flex display_col">
         <div class=" h-full w-1/2 flex flex-col justify-center items-center">
             <img src="./assests/enyoi_logo.jpg" class="h-[145px] w-[200px] rounded-xl py-3" alt="Enyoi">
             <div><a href="https://formacion.enyoi.co/course/index.php" target="_blank" class="py-3 bg-primary-alt border-solid border-[#8cb9ed] p-2 rounded-lg hover:bg-[#1758b6] hover:text-primary">Ir a proyecto</a></div>
@@ -133,9 +122,9 @@
     </div>
     </section>
 
-    <section id="section__experience" class="max-h-max w-full p-2 flex flex-col">
+    <section id="section__experience" class="h-max w-full p-2 flex flex-col display_col">
     <h2 class="text-white border-b-2 font-bold text-xl">Experience:</h2>
-    <div class="max-h-max w-full p-2 flex flex-wrap">
+    <div class="h-max w-full p-2 flex flex-wrap display_col">
         <div class="h-full w-1/4 flex flex-col justify-center items-center">
             <img src="./assests/HTML.png" class="h-16 w-14" alt="HTML">
             <progress class="" value="70" max="100">HTML</progress>
@@ -184,7 +173,7 @@
 
     <section id="section__certificates" class="max-h-max w-full p-2 my-3 flex flex-col">
         <h2 class="text-white border-b-2 font-bold text-xl">Certificates:</h2>
-        <div class="max-h-max w-full flex flex-wrap justify-around content-stretch py-2">
+        <div class="max-h-max w-full flex flex-wrap justify-around content-stretch py-2 ">
             <div class="h-auto w-auto flex flex-col px-1 justify-center items-center">
                 <img certificate src="./assests/Alfredo_HTML Advanced_001.png" class="h-[250px] w-[400px] cursor-pointer duration-300" alt="HTML">
                 <h3 class="font-bold text-primary">HTML</h3>
@@ -246,4 +235,4 @@
 <script src="./src/app.js"></script>
 
     </body>
-    </html>
+    </html> -->
