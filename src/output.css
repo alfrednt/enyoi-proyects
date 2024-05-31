@@ -566,6 +566,10 @@ video {
   left: 25%;
 }
 
+.right-0 {
+  right: 0px;
+}
+
 .top-0 {
   top: 0px;
 }
@@ -578,6 +582,11 @@ video {
   margin: 0.5rem;
 }
 
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
 .my-3 {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
@@ -587,8 +596,8 @@ video {
   display: flex;
 }
 
-.h-1\/6 {
-  height: 16.666667%;
+.hidden {
+  display: none;
 }
 
 .h-14 {
@@ -601,10 +610,6 @@ video {
 
 .h-2\/6 {
   height: 33.333333%;
-}
-
-.h-3\/6 {
-  height: 50%;
 }
 
 .h-5\/6 {
@@ -635,13 +640,14 @@ video {
   height: 100%;
 }
 
+.h-max {
+  height: -moz-max-content;
+  height: max-content;
+}
+
 .max-h-max {
   max-height: -moz-max-content;
   max-height: max-content;
-}
-
-.min-h-screen {
-  min-height: 100vh;
 }
 
 .w-1\/2 {
@@ -686,6 +692,16 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-max {
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.max-w-max {
+  max-width: -moz-max-content;
+  max-width: max-content;
 }
 
 .cursor-pointer {
@@ -786,6 +802,10 @@ video {
 
 .p-2 {
   padding: 0.5rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
 }
 
 .px-1 {
@@ -918,7 +938,7 @@ progress::-webkit-progress-value {
   background-color: #1c87f4
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
   body {
     width: device-width;
   }
@@ -927,16 +947,29 @@ progress::-webkit-progress-value {
     display: none;
   }
 
-  display_col{
+  .display_col{
     display: flex;
     flex-direction: column;
+    z-index: 10;
   }
-}
 
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-  body {
-    width: device-width;
-    scale:
+  .display_col>div{
+    width: 100%;
+  }
+
+  .remove_left{
+    left: 0;
+    width: 100%;
+  }
+
+  .display_show{
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+  }
+
+  .display_show>nav{
+    background-color: #173663;
   }
 }
 
@@ -955,11 +988,6 @@ progress::-webkit-progress-value {
   background-color: rgb(30 64 175 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-violet-800:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(91 33 182 / var(--tw-bg-opacity));
-}
-
 .hover\:text-3xl:hover {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -968,11 +996,6 @@ progress::-webkit-progress-value {
 .hover\:text-6xl:hover {
   font-size: 3.75rem;
   line-height: 1;
-}
-
-.hover\:text-pink-400:hover {
-  --tw-text-opacity: 1;
-  color: rgb(244 114 182 / var(--tw-text-opacity));
 }
 
 .hover\:text-primary:hover {
@@ -984,3 +1007,4 @@ progress::-webkit-progress-value {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+ 

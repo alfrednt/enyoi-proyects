@@ -14,18 +14,18 @@
     </head>
     <body class="max-w-max max-h-max overflow-y-scroll  bg-secondary-alt">
         <main class="h-full w-full flex">
-            <div class="h-max w-1/4 bg-secondary fixed top-0 hidden display_show">
+            <div class="h-max w-1/4 fixed top-0 right-0 hidden display_show">
                 <div class="w-max p-3">
-                    <button type="menu" class="m-2 w-full bg-primary-alt font-primary-alt rounded-full text-primary hover:bg-blue-800">Menu</button>
+                    <button id="menu_mobile" type="menu" class="mx-3 w-full bg-primary-alt font-primary-alt rounded-full text-primary hover:bg-blue-800">Menu</button>
                 </div>
-            <nav class="w-auto h-max flex flex-col text-primary font-primary-alt text-lg items-center">
+            <nav id="menuShow" class="w-auto h-max flex-col text-primary font-primary-alt hidden text-lg items-center ">
                 <ul>
-                    <li><a class="hover:text-white duration-300" href="#section__profile">Profile</a></li>
-                    <li><a class="hover:text-white duration-300" href="#section__proyects">Proyects</a></li>
-                    <li><a class="hover:text-white duration-300" href="#section__experience">Experience</a></li>
-                    <li><a class="hover:text-white duration-300" href="#section__certificates">Certificates</a></li>
-                    <li><a class="hover:text-white duration-300" href="#section__references">References</a></li>
-                    <li><a class="hover:text-white duration-300" href="#section__contact">Contact</a></li>
+                    <li menuBarra><a class="hover:text-white duration-300" href="#section__profile">Profile</a></li>
+                    <li menuBarra><a class="hover:text-white duration-300" href="#section__proyects">Proyects</a></li>
+                    <li menuBarra><a class="hover:text-white duration-300" href="#section__experience">Experience</a></li>
+                    <li menuBarra><a class="hover:text-white duration-300" href="#section__certificates">Certificates</a></li>
+                    <li menuBarra><a class="hover:text-white duration-300" href="#section__references">References</a></li>
+                    <li menuBarra><a class="hover:text-white duration-300" href="#section__contact">Contact</a></li>
                 </ul>
             </nav>
             </div>
