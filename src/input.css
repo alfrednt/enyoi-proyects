@@ -39,8 +39,7 @@ width: device-width;
 }
 .display_col{
 display: flex;
-flex-direction: column;
-z-index: 10;
+flex-direction: column;z-index: 10;
 }
 .display_col>div{
 width: 100%;
@@ -52,7 +51,6 @@ width: 100%;
 .display_show{
 display: flex;
 flex-direction: column;
-z-index: 10;
 
 }
 .display_show>nav{
